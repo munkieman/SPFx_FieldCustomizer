@@ -1,0 +1,30 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/spfx-serve.schema.json",
+  "port": 4321,
+  "https": true,
+  "serveConfigurations": {
+    "default": {
+      "pageUrl": "https://munkieman.sharepoint.com/Lists/Work%20Status/AllItems.aspx?origin=createListFromTemplate&viewid=a4e99387%2D1505%2D4a6e%2D8b0c%2Dd30b8f3fd0c6",
+      "fieldCustomizers": {
+        "PercentComplete": {
+          "id": "fdceb164-b83b-46fc-9035-48406fe9d839",
+          "properties": {
+            "greenMinLimit": "85",
+            "yellowMinLimit": "70"
+          }
+        }
+      }
+    },
+    "helloFieldCustomizer": {
+      "pageUrl": "https://{tenantDomain}/SitePages/myPage.aspx",
+      "fieldCustomizers": {
+        "InternalFieldName": {
+          "id": "fdceb164-b83b-46fc-9035-48406fe9d839",
+          "properties": {
+            "sampleText": "Value"
+          }
+        }
+      }
+    }
+  }
+}
